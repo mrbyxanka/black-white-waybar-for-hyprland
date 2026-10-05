@@ -1,0 +1,40 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+    
+    "modules-right": [
+        "custom/weather",
+        "custom/sep",
+        "network",
+        "custom/sep",
+        "battery"
+    ],
+
+    "network": {
+        "format-wifi": ", {essid}",
+        "format-disconnected": "Offline"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "custom/sep": {
+        "format": "|",
+        "tooltip": "false"
+    },
+    "custom/weather": {
+        "class": "weather",
+        "exec": "curl -s 'wttr.in/Vlaardingen?format=%t'",
+        "format": "{}",
+        "interval": 300
+    }
+
+}
