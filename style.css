@@ -10,21 +10,21 @@
     background: #101010;
     color: #ffffff;
     margin: 2px 2px;
+    border-radius: 0px;
 }
 #workspaces {
-    border-radius: 5px;
+    border-radius: 0px;
     margin: 5px;
     background: #101010;
     margin-left: 2px;
 }
 #workspaces button {
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 0.4rem;
 }
 #workspaces button.active {
     color: #74ddf0;
-    border-radius: 5px;
 }
 button {
     background: transparent;
@@ -32,13 +32,11 @@ button {
 #workspaces button:hover {
     background: #1e1e1e;
     border: 0px solid transparent;
+    border-radius: 99px;
 }
-#clock
-#battery
-
-#clock {
+#custom-clock {
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 #battery {
     color: #ffffff;
@@ -48,4 +46,10 @@ button {
 }
 #battery.warning:not(.charging) {
     color: #f73434;
+}
+#custom-weather {
+    color: #ffffff;
+}
+#custom-sep {
+    background: transparent;
 }
