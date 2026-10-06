@@ -19,6 +19,8 @@ hl.on("hyprland.start", function ()
 end)
 ```
 in your hyprland.lua filr for autostart
+
+also if you dont use kitty terminal, replace it with your terminal in scripts/waybar-wifi.sh & waybar-btop.sh
 # Requirements
 make sure you downloaded btop, swaync, nmtui, pavucontrol, font: jetbrainsmono nerd font(anyway you can replace font in style.css).
 # Features
