@@ -32,26 +32,28 @@
     ],
 
     "network": {
-        "format-wifi": ", {essid}",
-        "format-disconnected": "󰤠 Offline",
-        "on-click": "$HOME/.config/waybar/scripts/waybar-wifi.sh"
+        "format-wifi": "{icon} {essid}",
+        "format-disconnected": "󰤭 Offline",
+        "on-click": "$HOME/.config/waybar/scripts/waybar-wifi.sh",
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
     },
     "custom/weather": {
         "class": "weather",
         "exec": "curl -s 'wttr.in/Vlaardingen?format=%t'",
-        "format": "󰖐 {}",
-        "interval": 300
+        "format": "{icon} {text}",
+        "interval": 300,
+        "format-icons": ["󰖐", "󰖑", "󰖒", "󰖓", "󰖖", "󰖗", "󰖘", "󰖙", "󰖚", "󰖝", "󰙾", "󰖕"]
     },
     "battery": {
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "custom/sep": {
         "format": "|",
         "tooltip": false
     },
     "custom/clock": {
-        "exec": "date +'%Y-%m-%d %H:%M:%S'",
+        "exec": "date +'%d-%m-%y %H:%M:%S'",
         "interval" : 1,
         "tooltip": false
 
@@ -89,7 +91,8 @@
 
     },
     "backlight": {
-        "format": "󰃟 {percent}%"
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"]
     },
     "custom/notifications": {
         "format": "󰂚",
