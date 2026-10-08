@@ -21,6 +21,7 @@
     "modules-right": [
         "tray",
         "custom/sep",
+        "hyprland/language",
         "custom/notifications",
         "custom/sep",
         "pulseaudio",
@@ -28,7 +29,9 @@
         "custom/sep",
         "network",
         "custom/sep",
-        "battery"
+        "battery",
+        "custom/sep",
+        "custom/lock"
     ],
 
     "network": {
@@ -40,9 +43,9 @@
     "custom/weather": {
         "class": "weather",
         "exec": "curl -s 'wttr.in/Vlaardingen?format=%t'",
-        "format": "{icon} {text}",
+        "format": "󰅟 {text}",
         "interval": 300,
-        "format-icons": ["󰖐", "󰖑", "󰖒", "󰖓", "󰖖", "󰖗", "󰖘", "󰖙", "󰖚", "󰖝", "󰙾", "󰖕"]
+        "format-icons": ["󰖐"]
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -97,6 +100,15 @@
     "custom/notifications": {
         "format": "󰂚",
         "on-click": "swaync-client -t"
+    },
+    "custom/lock": {
+        "format": "",
+        "on-click": "hyprlock"
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "🇺🇸 US",
+        "format-ru": "🇷🇺 RU"
     }
 
 }
