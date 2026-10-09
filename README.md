@@ -27,6 +27,7 @@ If the bash scripts aren't working, paste this into your terminal:
 sudo chmod +x ~/.config/waybar/scripts/waybar-wifi.sh
 sudo chmod +x ~/.config/waybar/scripts/waybar-btop.sh
 ```
+If you dont use russian keybord layout you can change it in config.jsonc.
 # Requirements
 make sure you downloaded btop, swaync, nmtui, pavucontrol, font: jetbrainsmono nerd font(anyway you can replace font in style.css).
 # Features
